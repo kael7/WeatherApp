@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="city_name">Алматы</string>
+    <string name="edit_text">Выберите город</string>
+    <string name="checkbox">Ветер/Давление</string>
+    <string name="top_city1">Лондон</string>
+    <string name="top_city2">Париж</string>
+    <string name="top_city3">Токио</string>
+    <string name="top_city4">Берлин</string>
+    <string name="top_cities">Популярные города</string>
+    <string name="settings_name">Настройки</string>
+</resources>

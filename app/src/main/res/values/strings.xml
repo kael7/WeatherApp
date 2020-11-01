@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">WeatherApp</string>
+    <string name="city_name">Almaty</string>
+    <string name="temp" translatable="false">7°</string>
+    <string name="edit_text">Select City</string>
+    <string name="btn_ok" translatable="false">OK</string>
+    <string name="checkbox">Wind/Pressure</string>
+    <string name="top_city1">London</string>
+    <string name="top_city2">Paris</string>
+    <string name="top_city3">Tokyo</string>
+    <string name="top_city4">Berlin</string>
+    <string name="top_cities">Popular cities</string>
+    <string name="settings_name">Settings</string>
+</resources>
