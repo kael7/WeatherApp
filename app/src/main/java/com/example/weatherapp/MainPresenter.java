@@ -11,10 +11,12 @@ public final class MainPresenter {
 
     private int temp;
     private String city;
+    private String date;
 
     private MainPresenter(){
         temp = 0;
         city = null;
+        date = null;
     }
 
     public synchronized int randomTemp(){
@@ -23,8 +25,16 @@ public final class MainPresenter {
         return temp;
     }
 
-    public void setCity(String city) {
+    public synchronized void setCity(String city) {
         this.city = city;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public synchronized String getDate() {
+        return date;
     }
 
     public synchronized int getTemp() {

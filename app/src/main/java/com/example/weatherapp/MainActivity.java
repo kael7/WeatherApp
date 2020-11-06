@@ -7,8 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), instanceState + " - onCreate()", Toast.LENGTH_SHORT).show();
         final MainPresenter presenter = MainPresenter.getInstance();
 
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.cities_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        CalendarView calendarView = (CalendarView) findViewById(R.id.calendarView6);
+        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
+                String date = dayOfMonth +" / " + (month+1) + " / " + year;
+                presenter.setDate(date);
+            }
+        });
+
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,9 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 presenter.randomTemp();
 
-                EditText editText = (EditText) findViewById(R.id.editText);
-                String city = (String) editText.getText().toString();
-                presenter.setCity(city);
+                String text = spinner.getSelectedItem().toString();
+                presenter.setCity(text);
             }
         });
 
