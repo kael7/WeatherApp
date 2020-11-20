@@ -1,21 +1,31 @@
 <resources>
-    <string name="app_name" translatable="false">WeatherApp</string>
-    <string name="default_date" translatable="false">Default date</string>
-    <string name="default_city" translatable="false">Default city</string>
-    <string name="default_temp" translatable="false">Default temp</string>
-    <string name="edit_text">Select City</string>
-    <string name="btn_ok" translatable="false">OK</string>
-    <string name="checkbox">Wind/Pressure</string>
-    <string name="settings_name">Settings</string>
-    <string name="btn_browser">Browser</string>
-    <string-array name="cities_array">
-        <item>London</item>
-        <item>Paris</item>
-        <item>Tokyo</item>
-        <item>Berlin</item>
-        <item>Madrid</item>
-        <item>Beijing</item>
-        <item>Washington</item>
-        <item>Rome</item>
-    </string-array>
+    <string name="app_name">weatherApp</string>
+
+<!--    название городов -->
+    <string name="almaty">Алматы</string>
+    <string name="nursultan">Нур-Султан</string>
+    <string name="shymkent">Шымкент</string>
+    <string name="aktobe">Актобе</string>
+    <string name="karaganda">Караганда</string>
+    <string name="taraz">Тараз</string>
+    <string name="pavlodar">Павлодар</string>
+    <string name="ustkamenogorsk">Усть-Каменогорск</string>
+    <string name="semey">Семей</string>
+
+<!--   дни недели -->
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+
+    <string name="t1">0</string>
+    <string name="t2">-2</string>
+    <string name="t3">5</string>
+    <string name="t4">-8</string>
+    <string name="t5">10</string>
+    <string name="t6">24</string>
+    <string name="t7">15</string>
 </resources>

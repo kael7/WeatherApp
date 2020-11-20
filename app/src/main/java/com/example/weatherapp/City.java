@@ -7,17 +7,20 @@ public class City implements Parcelable {
 
     private final int imageIndex;
     private final String cityName;
-    private final int temperature;
+    private final String weekDay;
+    private final String temperature;
 
     protected City(Parcel in) {
         imageIndex = in.readInt();
         cityName = in.readString();
-        temperature = in.readInt();
+        weekDay = in.readString();
+        temperature = in.readString();
     }
 
-    public City(int imageIndex, String cityName, int temperature) {
+    public City(int imageIndex, String cityName, String weekDay, String temperature) {
         this.imageIndex = imageIndex;
         this.cityName = cityName;
+        this.weekDay = weekDay;
         this.temperature = temperature;
     }
 
@@ -25,7 +28,8 @@ public class City implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(imageIndex);
         dest.writeString(cityName);
-        dest.writeInt(temperature);
+        dest.writeString(weekDay);
+        dest.writeString(temperature);
     }
 
     @Override
@@ -53,7 +57,9 @@ public class City implements Parcelable {
         return cityName;
     }
 
-    public int getTemperature() {
-        return temperature;
+    public String getWeekDay() {
+        return weekDay;
     }
+
+    public String getTemperature() { return temperature; }
 }

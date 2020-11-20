@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Фрагмент с выбором городов -->
     <fragment
         android:name="com.example.weatherapp.CitiesFragment"
         android:id="@+id/cities"
