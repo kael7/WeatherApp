@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>@string/almaty</item>
+        <item>@string/nursultan</item>
+        <item>@string/shymkent</item>
+        <item>@string/aktobe</item>
+        <item>@string/karaganda</item>
+        <item>@string/taraz</item>
+        <item>@string/pavlodar</item>
+<!--        <item>@string/ustkamenogorsk</item>-->
+<!--        <item>@string/semey</item>-->
+    </string-array>
+
+    <integer-array name="weather_imgs">
+        <item>@drawable/image_part_001</item>
+        <item>@drawable/image_part_002</item>
+        <item>@drawable/image_part_003</item>
+        <item>@drawable/image_part_004</item>
+        <item>@drawable/image_part_005</item>
+        <item>@drawable/image_part_006</item>
+        <item>@drawable/image_part_007</item>
+<!--        <item>@drawable/image_part_008</item>-->
+<!--        <item>@drawable/image_part_009</item>-->
+    </integer-array>
+
+    <string-array name="week_days">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </string-array>
+
+    <string-array name="temperatures">
+        <item>@string/t1</item>
+        <item>@string/t2</item>
+        <item>@string/t3</item>
+        <item>@string/t4</item>
+        <item>@string/t5</item>
+        <item>@string/t6</item>
+        <item>@string/t7</item>
+    </string-array>
+</resources>
